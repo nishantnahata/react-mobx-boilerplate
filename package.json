@@ -1,0 +1,38 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Nishant Nahata",
+  "devDependencies": {
+    "react-app-rewired": "^1.5.2"
+  },
+  "dependencies": {
+    "@material-ui/core": "^1.4.3",
+    "electron": "^2.0.6",
+    "faker": "^4.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "mobx": "^5.0.0",
+    "mobx-react": "^5.2.3",
+    "mobx-react-devtools": "^6.0.2",
+    "prettier": "^1.14.0",
+    "react": "^16.4.2",
+    "react-app-rewire-mobx": "^1.0.8",
+    "react-dom": "^16.4.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "latest",
+    "react-scripts": "1.1.4"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom"
+  }
+}
